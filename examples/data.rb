@@ -1,8 +1,8 @@
 require "rubygems"
-require "cleanr"
+require "sanitizr"
 
 
-db = Cleanr::Database.new
+db = Sanitizr::Database.new
 
 db.table :cms_users do
   field :email, unique: true
