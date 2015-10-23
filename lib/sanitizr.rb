@@ -11,7 +11,7 @@ module Sanitizr
     attr_accessor :db
 
     def initialize(opts = {})
-      opts = { :adapter=>'postgres', :host=>'localhost', :database=>'food-portal_development' }.merge opts
+      opts = { :adapter=>'postgres', :host=>'localhost', :database=>'unsanitized_database' }.merge opts
       self.db = Sequel.connect(opts)
       @fields = []
     end
